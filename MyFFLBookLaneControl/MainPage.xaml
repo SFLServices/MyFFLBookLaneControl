@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="RangeTrainerTutor.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RangeTrainerTutor"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Width="800" Height="480" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" AllowFocusOnInteraction="False" UseLayoutRounding="False">
+        <Button x:Name="Reversebutton" Content="Reverse" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" 
+                Width="180" Height="130" ClickMode="Press"
+                Background="Green" FontSize="40" FontWeight="Bold" IsRightTapEnabled="False" IsTapEnabled="False" IsDoubleTapEnabled="False" 
+                FocusVisualMargin="-50,-50,-50,-50" IsHoldingEnabled="False" 
+                PointerEntered="Reversebutton_PointerEntered" PointerExited="Reversebutton_PointerExited" />
+        <Button x:Name="Forwardbutton" Content="Forward" HorizontalAlignment="Left" Margin="610,10,0,0" VerticalAlignment="Top" 
+                Width="180" Height="130" ClickMode="Press"
+                Background="Green" FontSize="40" FontWeight="Bold" IsRightTapEnabled="False" IsTapEnabled="False" IsDoubleTapEnabled="False" 
+                FocusVisualMargin="-50,-50,-50,-50" IsHoldingEnabled="False" PointerEntered="Forwardbutton_PointerEntered"
+                PointerExited="Forwardbutton_PointerExited" />
+        <TextBox x:Name="StatustextBox" HorizontalAlignment="Left" Margin="10,431,0,0" Text="FMPware Line Control" VerticalAlignment="Top" 
+                Width="303" IsReadOnly="True" Height="39" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" BorderThickness="0,0,0,0" FontWeight="Bold" AllowFocusOnInteraction="False" UseLayoutRounding="False"/>
+        <TextBox x:Name="Numbertextbox" HorizontalAlignment="Left" Margin="217,240,0,0" Text="0" VerticalAlignment="Top" 
+                Height="111" Width="118" FontSize="72" TextAlignment="Center" FontWeight="Bold" IsReadOnly="True" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" BorderThickness="0,0,0,0" AllowFocusOnInteraction="False" UseLayoutRounding="False"/>
+        <Button x:Name="Goyardsbutton" Content="GO" HorizontalAlignment="Left" Margin="472,240,0,0" VerticalAlignment="Top" 
+                Width="133" Height="111" Click="Goyardsbutton_Click" ClickMode="Press"
+                Background="#FFD9781E" FontSize="40" FontWeight="Bold" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" 
+                FocusVisualMargin="-50,-50,-50,-50" RenderTransformOrigin="0.21,0.506" IsTapEnabled="False"/>
+        <Button x:Name="Upyardsbutton" Content="^" HorizontalAlignment="Left" Margin="377,239,0,0" VerticalAlignment="Top" 
+                Width="55" Height="52" Click="Upyardsbutton_Click" ClickMode="Press"
+                Background="Yellow" FontSize="40" FontWeight="Bold" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" 
+                FocusVisualMargin="-50,-50,-50,-50" IsTapEnabled="False"/>
+        <Button x:Name="Downyardsbutton" Content="V" HorizontalAlignment="Left" Margin="377,299,0,0" VerticalAlignment="Top" 
+                Width="55" Height="52" Click="Downyardsbutton_Click" ClickMode="Press"
+                Background="Yellow" FontSize="26" FontWeight="Bold" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" 
+                FocusVisualMargin="-50,-50,-50,-50" IsTapEnabled="False"/>
+        <TextBox x:Name="TimeLeftBox" HorizontalAlignment="Left" Margin="318,0,0,309" Text="0" VerticalAlignment="Bottom" 
+            Height="106" Width="148" FontSize="72" TextAlignment="Center" FontWeight="Bold" IsReadOnly="True" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" BorderThickness="0,0,0,0" AllowFocusOnInteraction="False" UseLayoutRounding="False"/>
+        <TextBox x:Name="LanetextBox" HorizontalAlignment="Left" Margin="12,367,0,0" Text="Bay ? Lane ?" VerticalAlignment="Top" 
+                 Width="248" FontSize="36" FontWeight="Bold" IsReadOnly="True" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" BorderThickness="0,0,0,0" Height="58" AllowFocusOnInteraction="False" UseLayoutRounding="False"/>
+        <TextBox x:Name="TimeLefttextBox" HorizontalAlignment="Left" Margin="304,10,0,0" Text="Time Remaining" VerticalAlignment="Top" 
+                 Width="176" FontSize="20" FontWeight="Bold" IsReadOnly="True" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" BorderThickness="0,0,0,0" AllowFocusOnInteraction="False" UseLayoutRounding="False"/>
+        <TextBox x:Name="CompanytextBox" HorizontalAlignment="Left" Margin="472,433,0,0" Text="Hammer Down Range, Loveland OH" VerticalAlignment="Top" 
+                 Width="318" FontSize="16" FontWeight="Bold" Height="37" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" BorderThickness="0,0,0,0" AllowFocusOnInteraction="False" UseLayoutRounding="False"/>
+        <TextBox x:Name="Time" HorizontalAlignment="Left" Margin="318,433,0,0" Text="Clock" VerticalAlignment="Top" Width="148" IsReadOnly="True" Height="37" FontSize="22" FontWeight="Bold" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" BorderThickness="0,0,0,0" AllowFocusOnInteraction="False" UseLayoutRounding="False"/>
+        <TextBox x:Name="AutoAdvanceTarget" HorizontalAlignment="Left" Margin="217,198,0,0" Text="Auto Advance Target" VerticalAlignment="Top" 
+                 Width="388" FontSize="22" FontWeight="Bold" Height="37" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" BorderThickness="0,0,0,0" AllowFocusOnInteraction="False" UseLayoutRounding="False" TextAlignment="Center"/>
+    </Grid>
+</Page>
