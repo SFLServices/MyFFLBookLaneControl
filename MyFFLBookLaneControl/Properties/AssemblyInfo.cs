@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SFL Services, LLC")]
 [assembly: AssemblyProduct("MyFFLBookLaneControl")]
-[assembly: AssemblyCopyright("Copyright ©  2015-2022")]
+[assembly: AssemblyCopyright("© 2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
