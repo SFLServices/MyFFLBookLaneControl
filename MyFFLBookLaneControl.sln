@@ -6,8 +6,17 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LC", "MyFFLBookLaneControl\LC.csproj", "{DFD8756B-1726-46F5-9938-48E57DDD8E0A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{098943A0-82D7-4843-8A50-B1F7775E8219}"
+	ProjectSection(SolutionItems) = preProject
+		Changes.md = Changes.md
+		License.md = License.md
+		README.md = README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{7DCEE2CD-1125-4149-AD1F-E9D4C5CC3891}"
+	ProjectSection(SolutionItems) = preProject
+		.github\FUNDING.yml = .github\FUNDING.yml
+		.github\ISSUE_TEMPLATE.md = .github\ISSUE_TEMPLATE.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
