@@ -56,7 +56,7 @@ namespace RangeTrainerTutor
         private bool DATABASESSERVEREXISTS = false;
 
         //private const string SERVER = "192.168.251.63";
-        private const string SERVER = "192.168.253.17";
+        private const string SERVER = "sql.onling.com";
         private const string DATABASE = "SHOP";
         private const string USERID = "lanes";
         private const string PASSWORD = "!lanes123!";
